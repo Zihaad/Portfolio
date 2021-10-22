@@ -2,7 +2,8 @@ import "./productList.css";
 import Product from "../product/Product";
 import { products } from "../../data";
 
-import pro from '../../img/product1.jpg'
+import p1 from '../../img/mysite.png'
+
 
 const ProductList = () => {
   return (
@@ -17,7 +18,7 @@ const ProductList = () => {
       </div>
       <div className="pl-list">
         {products.map((item) => (
-          <Product key={item.id} img={pro} link={item.link} />
+          <Product key={item.id} img={p1} link={item.link} />
         ))}
       </div>
     </div>
